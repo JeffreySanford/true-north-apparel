@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
+  standalone: false
 })
 export class HeaderComponent {}
