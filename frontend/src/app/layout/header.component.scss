@@ -1,0 +1,12 @@
+.parallax {
+    background: url('/assets/parallax-layer1.png') 0 0 / cover no-repeat,
+                url('/assets/parallax-layer2.png') 0 0 / cover no-repeat,
+                url('/assets/parallax-background.png') 0 0 / cover no-repeat;
+    background-attachment: fixed, fixed, scroll;
+    background-position: center, center, top;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+}

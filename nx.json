@@ -78,13 +78,16 @@
       "linter": "eslint",
       "style": "scss",
       "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "style": "css"
     }
   },
   "tools": {
     "tailwind": {
-      "configPath": "apps/frontend/tailwind.config.js",
-      "cssPath": "apps/frontend/src/styles.css",
-      "postcssConfig": "apps/frontend/postcss.config.js"
+      "configPath": "./tailwind.config.js",
+      "cssPath": "./src/styles.css",
+      "postcssConfig": "./postcss.config.js"
     },
     "material": {
       "install": "ng add @angular/material"

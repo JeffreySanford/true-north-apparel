@@ -2,12 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { routes } from './app.routes';
+import { LayoutModule } from './layout/layout.module';
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule, 
+    RouterModule.forRoot(routes),
+    LayoutModule,
+    HomeModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
